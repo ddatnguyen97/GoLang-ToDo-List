@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { NavbarComponent } from '../components/navbar/navbar.component'
 import { SidedbarComponent } from '../components/sidedbar/sidedbar.component'
+import { NbIconModule, NbCalendarModule } from '@nebular/theme'
 
 @NgModule({
   declarations: [
@@ -10,7 +11,9 @@ import { SidedbarComponent } from '../components/sidedbar/sidedbar.component'
     SidedbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NbIconModule,
+    NbCalendarModule
   ],
   exports:[
     NavbarComponent,
