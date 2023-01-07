@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../components/navbar/navbar.component'
 import { SidedbarComponent } from '../components/sidedbar/sidedbar.component'
 import { NbIconModule, NbCalendarModule } from '@nebular/theme'
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   declarations: [
@@ -13,11 +14,13 @@ import { NbIconModule, NbCalendarModule } from '@nebular/theme'
   imports: [
     CommonModule,
     NbIconModule,
-    NbCalendarModule
+    NbCalendarModule,
   ],
   exports:[
     NavbarComponent,
-    SidedbarComponent
+    SidedbarComponent,
+    NbIconModule,
+    NbCalendarModule,
   ]
 })
 export class SharedModule { }

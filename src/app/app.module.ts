@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidedbarComponent } from './components/sidedbar/sidedbar.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TodolistComponent } from './components/todolist/todolist.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    NbEvaIconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
